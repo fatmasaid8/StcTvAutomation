@@ -1,4 +1,4 @@
-# StcTvAutomation
+# STC TV Automation
 This is an example project for doing web automation testing for "STC TV Web Application" to assert that the plan prices and currency are correct for (SA, Kuwait and Bahrain).
 
 # Project Description:
