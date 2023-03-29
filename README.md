@@ -18,5 +18,5 @@ This is an example project for doing web automation testing for "STC TV Web Appl
 - Import project as a Maven project to your compiler.
 - Apply Maven Install build for this project.
 - Run project as Maven Build/ TestNG build.
-- Test cases will run using "Firefox" by default but it can be changed to "Firefox" from the test case.
+- Test cases will run using "Firefox" by default but it can be changed to "Chrome" from the test case.
 - Reports will be created at directory: ./SavedExtentReports.
