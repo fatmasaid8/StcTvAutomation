@@ -4,6 +4,7 @@ This is an example project for doing web automation testing for "STC TV Web Appl
 # Project Description:
 - Project includes one test case that use data providers to run cases multiple times with data in excel files in (./Resuources).
 - Project supports parallel execution for cases based on the given number in testng file.
+- Automation framework supports both languages (English & Arabic) based on the given excel file and application link.
 
 # Project Specifications:
 - Programming Language: Java
