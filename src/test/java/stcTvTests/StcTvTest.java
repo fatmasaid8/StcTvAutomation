@@ -30,12 +30,12 @@ public class StcTvTest {
 		ExtentReportManager.createTest("STC TV Test case - Assertion for country (" + countryName
 				+ ") to have correct type, price and currency");
 		homePage.selectCountry(countryName);
-		Assert.assertTrue(homePage.getPlanPrice(PlanEnums.LITE.englishName).equals(litePrice));
-		Assert.assertTrue(homePage.getPlanCurrency(PlanEnums.LITE.englishName).contains(currency));
-		Assert.assertTrue(homePage.getPlanPrice(PlanEnums.CLASSIC.englishName).equals(classicPrice));
-		Assert.assertTrue(homePage.getPlanCurrency(PlanEnums.CLASSIC.englishName).contains(currency));
-		Assert.assertTrue(homePage.getPlanPrice(PlanEnums.PREMIUM.englishName).equals(premiumPrice));
-		Assert.assertTrue(homePage.getPlanCurrency(PlanEnums.PREMIUM.englishName).contains(currency));
+		softAssert.assertTrue(homePage.getPlanPrice(PlanEnums.LITE.englishName).equals(litePrice));
+		softAssert.assertTrue(homePage.getPlanCurrency(PlanEnums.LITE.englishName).contains(currency));
+		softAssert.assertTrue(homePage.getPlanPrice(PlanEnums.CLASSIC.englishName).equals(classicPrice));
+		softAssert.assertTrue(homePage.getPlanCurrency(PlanEnums.CLASSIC.englishName).contains(currency));
+		softAssert.assertTrue(homePage.getPlanPrice(PlanEnums.PREMIUM.englishName).equals(premiumPrice));
+		softAssert.assertTrue(homePage.getPlanCurrency(PlanEnums.PREMIUM.englishName).contains(currency));
 		driver.quit();
 		softAssert.assertAll();
 		ExtentReportManager.pass("Price and currency are as expected.");
